@@ -1,0 +1,58 @@
+group 'com.idlefish.flutterboost'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url "https://storage.googleapis.com/download.flutter.io"
+        }
+        maven {
+            url 'http://download.flutter.io'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
+    compileOnly 'com.google.android.material:material:1.0.0'
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    compileOnly 'androidx.annotation:annotation:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.1.0'
+    compileOnly 'com.alibaba:fastjson:1.2.41'
+
+}
+
+ext {
+    groupId = 'com.taobao.fleamarket'
+    artifactId = "FlutterBoost"
+}
+
