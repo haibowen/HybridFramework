@@ -16,14 +16,20 @@ Doctor summary (to see all details, run flutter doctor -v):
 ## 1、brew tap xinfeng-tech/fvm
 ## 2、brew install fvm
 ## 3、配置环境变量  
+~~~
 export FVM_DIR="$HOME/.fvm" <br>
 source "/usr/local/opt/fvm/init.sh"
+~~~
 ## 4、切换到需要更改sdk的项目下
+~~~
 执行 fvm use 1.22.5 --local 即可<br>
 fvm use version --local
+~~~
 ## 5、安装新的sdk执行如下命令
+~~~
 fvm install 1.17.4  <br>
 fvm install version
+~~~
 
 # Android模拟器 运行flutter boost会出现如下报错
 ~~~
@@ -50,4 +56,7 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
         ^
  ~~~       
 # 针对android版本做了简单的修复，目前可以正常使用
+~~~
+需要进行一波强有力的测试，发现问题所在
+~~~
 # 运行ios模拟器暂未发先报错的地方
