@@ -4,7 +4,6 @@
 ~~~
 Doctor summary (to see all details, run flutter doctor -v):
 [✓] Flutter (Channel stable, 1.22.5, on macOS 11.1 20C69 darwin-x64, locale zh-Hans-CN)
- 
 [✓] Android toolchain - develop for Android devices (Android SDK version 30.0.2)
 [✓] Xcode - develop for iOS and macOS (Xcode 11.6)
 [✓] Android Studio (version 4.0)
@@ -82,7 +81,7 @@ project.rootProject.allprojects {
             }
 }
 ~~~
-# Android模拟器 运行flutter boost会出现如下报错
+# Android模拟器 运行会出现如下报错
 ~~~
 /Users/edz/AndroidStudioProjects/new/flutter_boost/android/src/main/java/com/idlefish/flutterboost/XFlutterTextureView.java:14: 错误: XFlutterTextureView不是抽象的, 并且未覆盖RenderSurface中的抽象方法pause()
 public class XFlutterTextureView extends TextureView implements RenderSurface {
@@ -106,7 +105,7 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
         @Override
         ^
  ~~~       
-# 针对android版本做了简单的修复，目前可以正常使用
+# 针对android版本做了简单的修复
 ~~~
 需要进行一波强有力的测试，发现问题所在
 ~~~
