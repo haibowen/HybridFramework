@@ -7,7 +7,7 @@
 ## 1、brew tap xinfeng-tech/fvm
 ## 2、brew install fvm
 ## 3、配置环境变量  
-export FVM_DIR="$HOME/.fvm"
+export FVM_DIR="$HOME/.fvm" <br>
 source "/usr/local/opt/fvm/init.sh"
 ## 4、切换到需要更改sdk的项目下
 执行 fvm use 1.22.5 --local 即可
