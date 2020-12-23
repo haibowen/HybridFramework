@@ -38,3 +38,4 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
 /Users/edz/AndroidStudioProjects/new/flutter_boost/android/src/main/java/com/idlefish/flutterboost/XPlatformPlugin.java:92: 错误: 方法不会覆盖或实现超类型的方法
         @Override
         ^
+# 针对android版本做了简单的修复，目前可以正常使用
