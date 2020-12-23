@@ -109,4 +109,21 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
 ~~~
 需要进行一波强有力的测试，发现问题所在
 ~~~
-# 运行ios模拟器暂未发先报错的地方
+# 运行ios模拟器出现的问题
+~~~
+Warning: Podfile is out of date
+  This can cause a mismatched version of Flutter to be embedded in your app, which may result in App Store submission rejection or crashes.
+  If you have local Podfile edits you would like to keep, see https://github.com/flutter/flutter/issues/24641 for instructions.
+To regenerate the Podfile, run:
+  rm ios/Podfile
+
+
+ warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.3.99. (in target 'flutter_boost' from project 'Pods')
+    error: /Users/hyplo/Mycode/AndroidProject/HybridFramework/example/ios/Flutter/Debug.xcconfig: unable to open file (in target "Runner" in project "Runner") (in target 'Runner' from project 'Runner')
+    error: /Users/hyplo/Mycode/AndroidProject/HybridFramework/example/ios/Flutter/Debug.xcconfig: unable to open file (in target "Runner" in project "Runner") (in target 'Runner' from project 'Runner')
+    error: /Users/hyplo/Mycode/AndroidProject/HybridFramework/example/ios/Flutter/Debug.xcconfig: unable to open file (in target "Runner" in project "Runner") (in target 'Runner' from project 'Runner')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.3.99. (in target 'Runner' from project 'Runner')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.3.99. (in target 'Pods-Runner' from project 'Pods')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.3.99. (in target 'Flutter' from project 'Pods')
+
+~~~
