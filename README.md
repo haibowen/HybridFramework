@@ -9,9 +9,11 @@
 export FVM_DIR="$HOME/.fvm" <br>
 source "/usr/local/opt/fvm/init.sh"
 ## 4、切换到需要更改sdk的项目下
-执行 fvm use 1.22.5 --local 即可
-## 5、安装新的sdk执行
-fvm install 1.17.4
+执行 fvm use 1.22.5 --local 即可<br>
+fvm use version --local
+## 5、安装新的sdk执行如下命令
+fvm install 1.17.4  <br>
+fvm install version
 
 # 切换为flutter的最新版本的时候，Android模拟器 运行flutter boost会出现如下报错，运行ios模拟器暂未发先报错的地方
 
