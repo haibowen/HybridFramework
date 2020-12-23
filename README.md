@@ -22,17 +22,17 @@ brew install fvm
 ~~~
 ## 3、配置环境变量  
 ~~~
-export FVM_DIR="$HOME/.fvm" <br>
+export FVM_DIR="$HOME/.fvm" 
 source "/usr/local/opt/fvm/init.sh"
 ~~~
 ## 4、切换到需要更改sdk的项目下
 ~~~
-执行 fvm use 1.22.5 --local 即可<br>
+执行 fvm use 1.22.5 --local 
 fvm use version --local
 ~~~
 ## 5、安装新的sdk执行如下命令
 ~~~
-fvm install 1.17.4  <br>
+fvm install 1.17.4 
 fvm install version
 ~~~
 # 可能遇到的问题
