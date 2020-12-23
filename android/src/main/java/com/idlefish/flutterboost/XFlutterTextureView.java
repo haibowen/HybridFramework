@@ -148,6 +148,12 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
     }
   }
 
+  @Override
+  public void pause() {
+
+    //这是新增的一个方法
+  }
+
   // FlutterRenderer and getSurfaceTexture() must both be non-null.
   private void connectSurfaceToRenderer() {
     if (flutterRenderer == null || getSurfaceTexture() == null) {

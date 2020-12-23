@@ -7,6 +7,7 @@ package com.idlefish.flutterboost;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
+import android.os.Bundle;
 import android.provider.Settings;
 
 import android.text.Editable;
@@ -86,6 +87,7 @@ public class XTextInputPlugin {
         mImm = (InputMethodManager) view.getContext().getSystemService(
                 Context.INPUT_METHOD_SERVICE);
 
+        //这里有做修改
         textInputChannel.setTextInputMethodHandler(new TextInputChannel.TextInputMethodHandler() {
             @Override
             public void show() {
@@ -95,6 +97,16 @@ public class XTextInputPlugin {
             @Override
             public void hide() {
                 hideTextInput(mView);
+            }
+
+            @Override
+            public void requestAutofill() {
+
+            }
+
+            @Override
+            public void finishAutofillContext(boolean shouldSave) {
+
             }
 
             @Override
@@ -108,6 +120,11 @@ public class XTextInputPlugin {
             }
 
             @Override
+            public void setEditableSizeAndTransform(double width, double height, double[] transform) {
+
+            }
+
+            @Override
             public void setEditingState(TextInputChannel.TextEditState editingState) {
                 setTextInputEditingState(mView, editingState);
             }
@@ -115,6 +132,11 @@ public class XTextInputPlugin {
             @Override
             public void clearClient() {
                 clearTextInputClient();
+            }
+
+            @Override
+            public void sendAppPrivateCommand(String action, Bundle data) {
+
             }
         });
         restartAlwaysRequired = isRestartAlwaysRequired();

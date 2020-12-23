@@ -85,14 +85,20 @@ public class XPlatformPlugin {
         }
 
         @Override
-        public List<Rect> getSystemGestureExclusionRects() {
-            return XPlatformPlugin.this.getSystemGestureExclusionRects();
+        public boolean clipboardHasStrings() {
+            return false;
         }
 
-        @Override
-        public void setSystemGestureExclusionRects(@NonNull ArrayList<Rect> rects) {
-            XPlatformPlugin.this.setSystemGestureExclusionRects(rects);
-        }
+        //注意这里有做修改
+//        @Override
+//        public List<Rect> getSystemGestureExclusionRects() {
+//            return XPlatformPlugin.this.getSystemGestureExclusionRects();
+//        }
+//
+//        @Override
+//        public void setSystemGestureExclusionRects(@NonNull ArrayList<Rect> rects) {
+//            XPlatformPlugin.this.setSystemGestureExclusionRects(rects);
+//        }
     };
 
     public XPlatformPlugin(PlatformChannel platformChannel) {
