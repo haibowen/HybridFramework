@@ -10,7 +10,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 [✓] Android Studio (version 4.0)
 [✓] Connected device (2 available)
 ~~~
-# 实际项目开发中涉及到flutter sdk版本的切换的注意事项
+# flutter sdk版本的切换的注意事项
 使用官方的切换方式会导致，pc上flutter sdk整体的切换，若果只想针对单个项目进行flutter sdk的切换，可以使用fvm 来进行对flutter sdk的管理
 使用步骤如下所示
 ## 1、brew tap xinfeng-tech/fvm
@@ -25,7 +25,7 @@ fvm use version --local
 fvm install 1.17.4  <br>
 fvm install version
 
-# 切换为flutter的最新版本的时候，Android模拟器 运行flutter boost会出现如下报错，运行ios模拟器暂未发先报错的地方
+# Android模拟器 运行flutter boost会出现如下报错
 ~~~
 /Users/edz/AndroidStudioProjects/new/flutter_boost/android/src/main/java/com/idlefish/flutterboost/XFlutterTextureView.java:14: 错误: XFlutterTextureView不是抽象的, 并且未覆盖RenderSurface中的抽象方法pause()
 public class XFlutterTextureView extends TextureView implements RenderSurface {
@@ -50,3 +50,4 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
         ^
  ~~~       
 # 针对android版本做了简单的修复，目前可以正常使用
+# 运行ios模拟器暂未发先报错的地方
