@@ -73,7 +73,7 @@ public class XAndroidKeyProcessor {
             return null;
         }
 
-        Character complexCharacter = (char) newCharacterCodePoint;
+        char complexCharacter = (char) newCharacterCodePoint;
         boolean isNewCodePointACombiningCharacter = (newCharacterCodePoint & KeyCharacterMap.COMBINING_ACCENT) != 0;
         if (isNewCodePointACombiningCharacter) {
             // If a combining character was entered before, combine this one with that one.
