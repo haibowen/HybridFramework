@@ -36,9 +36,11 @@ public class XAndroidKeyProcessor {
         }
 
         Character complexCharacter = applyCombiningCharacterToBaseCharacter(keyEvent.getUnicodeChar());
-        keyEventChannel.keyDown(
-                new KeyEventChannel.FlutterKeyEvent(keyEvent, complexCharacter)
-        );
+        if (complexCharacter!=null){
+            keyEventChannel.keyDown(
+                    new KeyEventChannel.FlutterKeyEvent(keyEvent, complexCharacter)
+            );
+        }
     }
 
     /**
@@ -73,7 +75,7 @@ public class XAndroidKeyProcessor {
             return null;
         }
 
-        char complexCharacter = (char) newCharacterCodePoint;
+        Character complexCharacter = (char) newCharacterCodePoint;
         boolean isNewCodePointACombiningCharacter = (newCharacterCodePoint & KeyCharacterMap.COMBINING_ACCENT) != 0;
         if (isNewCodePointACombiningCharacter) {
             // If a combining character was entered before, combine this one with that one.
