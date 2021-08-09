@@ -5,13 +5,13 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
-  - flutter_boost (from `/Users/edz/AndroidStudioProjects/new/flutter_boost/ios`)
+  - flutter_boost (from `/Users/jessica/Desktop/boost/HybridFramework/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: ".symlinks/flutter/ios"
   flutter_boost:
-    :path: "/Users/edz/AndroidStudioProjects/new/flutter_boost/ios"
+    :path: "/Users/jessica/Desktop/boost/HybridFramework/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2a757a7bdc03b37a2814666652fdff1cf694243f
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
