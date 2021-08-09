@@ -31,5 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy,readwrite) NSString *name;
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (void)surfaceUpdated:(BOOL)appeared;
+- (void)detatchFlutterEngine;
 @end
 NS_ASSUME_NONNULL_END
